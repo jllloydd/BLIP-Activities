@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Task 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark midnight w-100">
+
+        <a class="navbar-brand px-lg-4" href="#">
+            <h1 class="dm-bold">The Tures</span></h1>   
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse pl-lg-5" id="navbarNavDropdown">
+
+          <ul class="navbar-nav font-weight-bold ">
+
+            <li class="nav-item">
+
+              <a class="nav-link text-white" href="#">
+                Home
+              </a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+                
+                <a class="nav-link dropdown-toggle font-weight-bold text-gray" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Shop
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Seats</a>
+                  <a class="dropdown-item" href="#">Tables</a>
+                  <a class="dropdown-item" href="#">Cabinets</a>
+                </div>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link text-white" href="#">
+                About
+              </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link text-white" href="#">
+                  Blog
+                </a>
+  
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link text-white" href="#">
+                  Contact
+                </a>
+  
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link text-white" href="#">
+                Pages
+              </a>
+
+            </li>
+
+            <li class="nav-item d-lg-none d-xl-none">
+
+                <a class="nav-link" href="#">
+                    <div class="inline-flex text-white">
+                        Login/Register
+                    </div>
+
+                </a>
+  
+              </li>
+
+          </ul>
+
+        </div>
+
+        <span class="d-none d-lg-block d-xl-block">
+
+            <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#">
+                        <div class="inline-flex text-white">
+                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            Login/Register
+                        </div>
+
+                    </a>
+      
+                  </li>
+            </ul>
+
+        </span>
+
+    </nav>
+
+    <!-- Header -->
+
+    <!-- Body -->
+
+    <style>
+
+        .container {
+            position: relative;
+            text-align: center;
+          }
+
+        
+        .midnight{
+            background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+        }
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        .darkened{
+            filter: brightness(70%);
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .dm-bold {
+            font-family: "DM Serif Display", serif;
+            font-weight: 900;
+            font-style: normal;
+          }
+          
+          .dm-serif-display-regular-italic {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+            font-style: italic;
+          }
+
+        .dark-text{
+            color:#222222;
+        }
+
+        .stroked {
+            -webkit-text-stroke: 1px black;
+          }
+          
+    </style>
+
+
+
+    <div class="container my-2 py-4 px-5 d-block m-auto">
+
+
+        <div class="row d-none d-lg-flex">
+
+            <div class="col-lg-4 col-sm-6">
+
+                <img class="d-block m-auto rounded shadow-sm darkened" src="https://hips.hearstapps.com/hmg-prod/images/hbx010124michaelellison-003-660d5f025653a.jpg?crop=0.447xw:1.00xh;0.367xw,0&resize=980:*" 
+                width="100%" height="97%"
+                alt="Furniture Set 1">
+                <div class="top-left dm-bold py-5 pl-1">
+                    <h2 class="pt-5 pl-2 text-white">Classy Home Set Ups</h2>
+                    <button type="button" class="btn btn-dark float-left ml-2">Read More</button>
+                </div>
+
+            </div>
+
+            <div class="col-lg-8">
+
+                <img class="d-block m-auto rounded shadow-sm darkened" src="https://images.pexels.com/photos/115747/pexels-photo-115747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                width="94.8%" height="51%"
+                alt="Furniture Set 2">                
+                
+                <div class="top-right pr-4 dm-bold">
+                    <h2 class="pt-5 pl-2 text-white">Cozy Workplaces</h2>
+                    <button type="button" class="btn btn-dark float-right ml-2">Read More</button>
+                </div>
+
+                <div class="col">
+
+                    <div class="row py-3">
+
+                        <div class="col-lg-6">
+                            <img class="d-block m-auto rounded shadow-sm" src="https://images.pexels.com/photos/269252/pexels-photo-269252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                            width="99%" height="100%"
+                            alt="Square">
+
+                        <div class="top-right pr-4 dm-bold">
+                            <h2 class="pt-5 pl-2 dark-text">Places of Solace</h2>
+                            <button type="button" class="btn btn-dark float-right ml-2">Read More</button>
+                        </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <img class="d-block m-auto rounded shadow-sm" src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                            width="99%"
+                            height="100%"
+                            alt="Square 2">
+
+                            <div class="bottom-left pr-4 dm-bold">
+                                <h2 class="pt-5 pl-2 text-white">Sophisticated Stools</h2>
+                                <button type="button" class="btn btn-dark float-left ml-2">Read More</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> 
+
+        <!-- Mobile View -->
+
+        <div class="d-lg-none d-sm-flex d-md-flex col-sm-12">
+            <div class="row">
+
+                <div class="container">
+
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/hbx010124michaelellison-003-660d5f025653a.jpg?crop=0.447xw:1.00xh;0.367xw,0&resize=980:*"
+                    class="img-fluid my-4 rounded shadow-sm darkened"
+                    alt="image 1">
+                    <div class="top-left dm-bold py-5 pl-1">
+                        <h1 class="pt-5 pl-2 text-white">Classy Home Set Ups</h1>
+                        <button type="button" class="btn btn-dark float-left ml-2">Read More</button>
+                    </div>
+
+                </div>
+
+                <div class="container">
+
+                <img src="https://images.pexels.com/photos/115747/pexels-photo-115747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                class="img-fluid my-4 rounded shadow-sm darkened"
+                alt="image 2">
+
+                <div class="bottom-right mb-4 dm-bold">
+                    <h2 class="pt-5 pl-2 pr-2 text-white">Cozy Workplaces</span></h2>
+                    <button type="button" class="btn btn-dark ml-2">Read More</button>
+                </div>
+
+                </div>
+                
+                <div class="container">
+
+                <img src="https://images.pexels.com/photos/269252/pexels-photo-269252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                class="img-fluid my-4 rounded shadow-sm"
+                alt="image 3">
+
+                <div class="top-right pr-4 dm-bold">
+                    <h2 class="pt-5 pl-2 dark-text">Places of Solace</h2>
+                    <button type="button" class="btn btn-dark float-right ml-2">Read More</button>
+                </div>
+
+                </div>
+
+                <div class="container">
+
+                <img src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                class="img-fluid my-4 rounded shadow-sm"
+                alt="image 4">
+
+                <div class="bottom-left mb-5 pl-3 dm-bold">
+                    <h2 class="pt-5 pl-2 text-white">Sophisticated Stools</h2>
+                    <button type="button" class="btn btn-dark float-left ml-2">Read More</button>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div> 
+    <!-- Body -->
+
+</body>
+
+</html>
