@@ -16,6 +16,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
+    <style>
+
+        .container {
+            position: relative;
+            text-align: center;
+          }
+
+
+
+        img:hover{
+            transform:scale(1.02);
+            transition:transform 300ms ease-in-out;
+        }
+
+        .midnight{
+            background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+        }
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        .darkened{
+            filter: brightness(70%);
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .dm-bold {
+            font-family: "DM Serif Display", serif;
+            font-weight: 900;
+            font-style: normal;
+          }
+          
+          .dm-serif-display-regular-italic {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+            font-style: italic;
+          }
+
+        .dark-text{
+            color:#222222;
+        }
+
+        .stroked {
+            -webkit-text-stroke: 1px black;
+          }
+
+          @media(max-width:380px){
+            h2{
+                font-size: clamp(13px, 18px, 30px);
+            }
+          }
+          
+    </style>
+
 </head>
 
 <body>
@@ -129,76 +209,6 @@
 
     <!-- Body -->
 
-    <style>
-
-        .container {
-            position: relative;
-            text-align: center;
-          }
-
-        
-        .midnight{
-            background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-        }
-        .top-right {
-            position: absolute;
-            top: 8px;
-            right: 16px;
-        }
-
-        .top-left {
-            position: absolute;
-            top: 8px;
-            left: 16px;
-        }
-
-        .bottom-left {
-            position: absolute;
-            bottom: 8px;
-            left: 16px;
-        }
-
-        .bottom-right {
-            position: absolute;
-            bottom: 8px;
-            right: 16px;
-        }
-
-        .darkened{
-            filter: brightness(70%);
-        }
-
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .dm-bold {
-            font-family: "DM Serif Display", serif;
-            font-weight: 900;
-            font-style: normal;
-          }
-          
-          .dm-serif-display-regular-italic {
-            font-family: "DM Serif Display", serif;
-            font-weight: 400;
-            font-style: italic;
-          }
-
-        .dark-text{
-            color:#222222;
-        }
-
-        .stroked {
-            -webkit-text-stroke: 1px black;
-          }
-          
-    </style>
-
-
-
     <div class="container my-2 py-4 px-5 d-block m-auto">
 
 
@@ -268,15 +278,15 @@
         <div class="d-lg-none d-sm-flex d-md-flex col-sm-12">
             <div class="row">
 
-                <div class="container">
+                <div class="container" id="imagecontainer">
 
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/hbx010124michaelellison-003-660d5f025653a.jpg?crop=0.447xw:1.00xh;0.367xw,0&resize=980:*"
-                    class="img-fluid my-4 rounded shadow-sm darkened"
-                    alt="image 1">
-                    <div class="top-left dm-bold py-5 pl-1">
-                        <h2 class="pt-5 pl-2 text-white">Classy Home Set Ups</h2>
-                        <button type="button" class="btn btn-dark float-left ml-2">Read More</button>
-                    </div>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/hbx010124michaelellison-003-660d5f025653a.jpg?crop=0.447xw:1.00xh;0.367xw,0&resize=980:*"
+                        class="img-fluid my-4 rounded shadow-sm darkened"
+                        alt="image 1">
+                        <div class="centered dm-bold py-5">
+                            <h2 class="pt-5 pl-2 text-white">Classy Home Set Ups</h2>
+                            <button type="button" class="btn btn-sm btn-dark">Read More</button>
+                        </div>
 
                 </div>
 
@@ -288,7 +298,7 @@
 
                 <div class="bottom-right mb-4 dm-bold">
                     <h2 class="pt-5 pl-2 pr-2 text-white">Cozy Workplaces</span></h2>
-                    <button type="button" class="btn btn-dark ml-2">Read More</button>
+                    <button type="button" class="btn btn-sm btn-dark ml-2">Read More</button>
                 </div>
 
                 </div>
@@ -301,7 +311,7 @@
 
                 <div class="top-right pr-4 dm-bold">
                     <h2 class="pt-5 pl-2 dark-text">Places of Solace</h2>
-                    <button type="button" class="btn btn-dark float-right ml-2">Read More</button>
+                    <button type="button" class="btn btn-sm btn-dark float-right ml-2">Read More</button>
                 </div>
 
                 </div>
@@ -312,9 +322,9 @@
                 class="img-fluid my-4 rounded shadow-sm"
                 alt="image 4">
 
-                <div class="bottom-left mb-5 pl-3 dm-bold">
+                <div class="centered mb-5 dm-bold">
                     <h2 class="pt-5 pl-2 text-white">Sophisticated Stools</h2>
-                    <button type="button" class="btn btn-dark float-left ml-2">Read More</button>
+                    <button type="button" class="btn btn-sm btn-dark">Read More</button>
                 </div>
 
                 </div>
